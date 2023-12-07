@@ -19,10 +19,10 @@ function arSzamitas() {
         }
 
         var hazTipus;
-        var hazTipusRadios = document.getElementsByName("hazTipus");
-        for (var i = 0; i < hazTipusRadios.length; i++) {
-            if (hazTipusRadios[i].checked) {
-                hazTipus = hazTipusRadios[i].value;
+        var hazTipusgomb = document.getElementsByName("hazTipus");
+        for (var i = 0; i < hazTipusgomb.length; i++) {
+            if (hazTipusgomb[i].checked) {
+                hazTipus = hazTipusgomb[i].value;
                 break;
             }
         }
