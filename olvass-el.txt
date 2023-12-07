@@ -1,0 +1,15 @@
+Péter Zsombor
+
+https://zsomboss.github.io/html_beadando_Peter_Zsombor/
+
+A weboldalam témája a modern otthonok Beltér illetve Kültér tervezéséről és kivitelezéséről szól.
+Célom a saját határaim felmérése volt ezen feladat során, probáltam figyelni a design elemekre és esztétikusan megírni a kódom.
+A weboldal bepillantást nyújt egy általam kitalált cég szolgáltatásaiba, leirásaim igen rövidre sikerültek az adott termékek-ről illetve képekről, 
+de ez csupán azért mert a képek magukért beszelnek.
+
+A belter.html oldalon egy alert találhato amit javascript kóddal írtam, itt lényegében a fogyasztó figyelmének felkeltése és nem felbosszantása volt a célom.
+A nagyobb léptékű javascript kódom az arfelmeres.html oldalon talalhato, amiben egy ar kalkulátort készítetten.
+Itt ugyanis egy űrlap szerű kezelő felületen keresztül bekértem a vásárló lakásnak paraméterit.
+Javascriptemben a megadott negyzetmétert megszoroztam a szolgáltatás típusával, valamint hozzáadtam az esetleges úti költséget.
+
+Egyedi font típusként a Roboto-t használtam, az összes oldalamon megjelenik

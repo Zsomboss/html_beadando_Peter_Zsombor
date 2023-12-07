@@ -1,2 +1,0 @@
-# html-beadando
- html weboldalam
