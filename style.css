@@ -38,6 +38,7 @@ div#content {
 .navbar ul li a {
     color: white;
     text-transform: uppercase;
+    text-decoration: none;
 }
     
 .navbar ul li::after {
@@ -207,10 +208,11 @@ div#content {
 }
 
 .urlap {
+
     background-color: #d4cbcb ;
     margin-bottom: 10%;
     margin-top: 10%;
-    margin-right: 40%;
+    width: 100%;
     padding: 5%;
 }
 
@@ -316,6 +318,7 @@ div#content {
     background-color: #45a049;
 }
 
+
 article h1 {
     margin: 2em 0.3em 2em;
     font-size: 1.8em;
@@ -340,7 +343,7 @@ footer {
 }
 
 /* reszponzivitás */
-@media only screen and (min-width: 750px) {
+@media only screen and (min-width: 600px) {
     /* tablet */
 .fejlec ul li {
         margin: 0 10px;} /* Adjust the margin for smaller screens */
@@ -395,4 +398,8 @@ footer {
         width: 10%;
     }
     
+    .urlap {
+        margin-right: 40%;
+        width: 60%;
+    }
 }
