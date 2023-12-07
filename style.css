@@ -1,0 +1,398 @@
+* {
+    box-sizing: border-box;   
+}
+div#content {
+    display: flex;
+    flex-direction: column;
+}
+.elso {
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background-image: url('kepek/otthon.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+    
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    width: 100%;
+    padding-top: 1.5vh;
+}
+    
+.navbar ul li a {
+    color: white;
+    text-transform: uppercase;
+}
+    
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: sandybrown;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+    
+.navbar ul li:hover::after {
+    width: 100%;
+}
+    
+.logo {
+    width: 120px;
+    cursor: pointer;
+}
+.megjelenes {
+    width: 100%;
+    top: 50%;
+    text-align: center;
+    color: white;
+}
+
+.megjelenes h1 {
+    font-size: 40px;
+}
+
+.megjelenes p {
+    margin: 20px auto;
+    font-size: 20px;
+    color: deepskyblue;
+    letter-spacing: .1em;
+}
+
+button {
+    width: 250px;
+    padding: 20px 0;
+    text-align: center;
+    margin: 30px 20px;
+    border-radius: 35px;
+    font-weight: bold;
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+span {
+    background: rgba(255, 255, 255, 0.8);
+    height: 100%;
+    width: 0%;
+    border-radius: 35px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+    transition: 1s;
+    transition-delay: 0.5s;
+    color: black;
+}
+
+/* masodik oldal */
+.masodik {
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background: #d4cbcb; 
+    margin: 0;
+}
+
+div#content {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px;
+}
+    
+.column {
+        flex: 1;
+        margin: 10px;
+}
+        
+.szoba-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+}
+    
+.szoveg,
+.kep {
+        flex: 1;
+}
+    
+.kep img {
+        width: 100%;
+        height: auto;
+}
+
+.ps{
+    font-size: 30px;    
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.galleria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 90vw;
+        height: 90vw;
+}
+
+.galleria img {
+    max-width: 100%;
+    height: auto;
+}
+
+.galleria-theme-classic{background-color: #d4cbcb;}
+.galleria-theme-classic .galleria-thumb-nav-left,
+.galleria-theme-classic .galleria-thumb-nav-right,
+.galleria-theme-classic .galleria-info-link, 
+.galleria-theme-classic .galleria-info-close, 
+.galleria-theme-classic .galleria-image-nav-left, 
+.galleria-theme-classic .galleria-image-nav-right 
+{background-color: rgb(208, 210, 211);}
+
+/* hirlevel */
+.harmadik{
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background-image: url('kepek/otthon.jpg'); 
+    background-attachment: fixed;
+    background-size:auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+
+.urlap {
+    background-color: #d4cbcb ;
+    margin-bottom: 10%;
+    margin-top: 10%;
+    margin-right: 40%;
+    padding: 5%;
+}
+
+.keres {
+    font-size: 20px;
+    color: lightslategray;
+}
+
+.valasz, .email, .telefon, .infok{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px dotted lemonchiffon;
+    border-radius: 5px;
+}
+
+.neve{
+    width: 80%;
+    height: 30px;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border: 2px dotted lemonchiffon;
+    border-radius: 5px;
+}
+
+.kuldes {
+    background: darkviolet;
+    color: white; 
+    padding: 10px 20px;
+    text-align: center; 
+    margin-top: 2%;
+    width: 40%;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: none; 
+    cursor: pointer;
+}
+
+.elfogad {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+/*arfelmeres*/
+.negyedik {
+    margin: 0;
+    padding: 0;
+    font-size: 95%;
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    background-image: url('kepek/otthon.jpg'); 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.tartalom {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #d4cbcb;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 10px rgba(0, 0, 0, 0.1);
+}
+
+.kalkulator {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.kalkulator td {
+    padding: 10px;
+    border-bottom: 1px solid #d4cbcb;
+}
+
+.kalkulator label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.kalkulator input,
+.kalkulator select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.button2 {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.button2:hover {
+    background-color: #45a049;
+}
+
+article h1 {
+    margin: 2em 0.3em 2em;
+    font-size: 1.8em;
+    font-weight: normal;
+}
+
+article p {
+    margin: 1em;
+    padding: 0em;
+}
+
+
+
+footer {
+    flex-basis: 100%;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #d4cbcb;
+    color: rgb(121, 16, 16);
+    position: fixed;
+}
+
+/* reszponzivitás */
+@media only screen and (min-width: 750px) {
+    /* tablet */
+.fejlec ul li {
+        margin: 0 10px;} /* Adjust the margin for smaller screens */
+    div#content {
+        flex-direction: row;
+    }
+    div#felezett_content {
+        flex-direction: row;
+    }
+    header h1 {
+        font-size: 2em;
+    }
+    article{
+        padding:15px;
+    }
+    .kalkulator-táblázat td {
+        display: flex;
+        align-items: center;
+    }
+
+    .kalkulator-táblázat input[type="radio"] {
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* számítógép */
+    article {
+        flex-basis: 100%;
+    }
+    nav ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    nav ul li{
+        flex-wrap: nowrap;
+    }
+    article h1 {font-size: 2em}
+    article h2 {font-size: 1.8em}
+    article h3 {font-size: 1.3em}
+    header h1 {font-size: 2.2em;}
+
+    .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+        width: 10%;
+    }
+    
+}

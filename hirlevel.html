@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Péter Zsombor">
+    <meta name="copyright" content="iskolai projekt">
+    <meta name="description" content="A lakás berendezés bemutatása egy iskolai projekt keretein belül">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Lakberendezés</title>
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="jquery/dist/jquery.validate.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#myform").validate({
+            rules: {
+    keresztnev: "required",
+    vezeteknev: "required",
+    email: {
+    required: true,
+    email: true
+    },
+    telefon: "required",
+    elfogad: {
+    required: true,
+    },
+    },
+    
+    
+    messages: {
+    keresztnev: "<br> Írd be a keresztneved!",
+    vezeteknev: "<br> Írd be a vezetékneved!",
+    email: {
+    required: "<br> Add meg az e-mail címed!",
+    },
+    telefon: "<br> Kérlek adj meg érvényes telefonszámot",
+    elfogad: "<br> Kérlek fogadd el a feltételeinket!",
+    },
+    
+        });
+        });
+</script>
+
+<style>
+    input.error {
+    border: 3px solid red;
+    }
+    label.error {
+    color: #FB3A3A;
+    }
+</style>
+
+</head>
+
+<body class="harmadik">
+    <div class="navbar">
+        <img src="kepek/logo.jpg.avif" alt="logo" class="logo">
+        <ul>
+            <li>
+                <a href="index.html">Otthon</a>
+            </li>
+            <li>
+                <a href="belter.html">Beltér</a>
+            </li>
+            <li>
+                <a href="#" id="active">Hírlevél</a>
+            </li>
+            <li>
+                <a href="arfelmeres.html">Árfelmérés</a>
+            </li>
+        </ul>
+    </div>
+
+  
+        
+  
+      <div class="urlap">
+        <h3 class="keres">Megrendelés</h3>
+        <h4>Kérem töltse ki a hiányzó mezőket, a megrendelés véglegeítése érdekében</h4>
+        <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate>
+        <table>
+            <tr>
+                <label for="keresztnev">Keresztnév</label>
+                <br>
+                <input type="text" name="keresztnev" id="keresztnev" placeholder="Név" class="neve" required>
+                <label for="keresztnev" class="error"></label>
+                <br>
+            </tr>
+            <tr>
+                
+                <label for="vezeteknev">Vezetéknév</label>
+                <br>
+                <input type="text" name="vezeteknev" id="vezeteknev" placeholder="Név" class="neve"><br>
+            </tr>   
+            <tr>
+                <label for="szolgaltatas">Szolgáltatás</label><br>
+                <select id="szolgaltatas" name="szolgaltatas" class="valasz" >
+                <option id="belter">Beltéri Design</option>
+                <option id="kulter">Kültéri Design</option>
+                <option id="tapeta">Tapéta Rendelés</option>
+                <option id="egyeb">Egyéb</option>
+                </select>
+            </tr>
+            <tr>
+                <br>
+                <label for="email">E-mail cím</label><br>
+                <input type="email" id="email" name="email" placeholder="E-mail:" class="email"><br>
+            </tr>
+            <tr>
+              <label for="telefon">Telefonszám</label><br>
+              <input type="text" id="telefon" name="telefon" placeholder="+36..." class="telefon"><br>
+            </tr>
+            <tr>
+                <label for="infok">Egyéb Megrendelésével Kapcsolatos Információk</label><br>
+                <textarea name="infok" id="infok" placeholder="Releváns információk" class="infok"></textarea><br>
+            </tr>
+                <label for="elfogad"><input type="checkbox" name="elfogad" id="elfogad" class="elfogad">Beleegyezik adatai felhasználásába?</label>
+                <br>
+                <input type="submit" name="elkuld" value="Elküld" class="kuldes">
+                <input type="reset" name="megsem" value="Mégsem" class="kuldes">
+        </table>
+        </form>
+    </div>
+    
+
+<footer>
+    <p>&copy; 2023 Html beadandó. Péter Zsombor.</p>
+</footer>
+</body>
+
+</html>
+

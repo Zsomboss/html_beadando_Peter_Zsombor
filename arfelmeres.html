@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Péter Zsombor">
+    <meta name="copyright" content="iskolai projekt">
+    <meta name="description" content="A lakás berendezés bemutatása egy iskolai projekt keretein belül">
+    <title>Árfelmérés</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="script.js"></script>
+</head>
+
+<body class="negyedik">
+    <div class="navbar">
+        <img src="kepek/logo.jpg.avif" alt="logo" class="logo">
+        <ul>
+            <li>
+                <a href="index.html">Otthon</a>
+            </li>
+            <li>
+                <a href="belter.html">Beltér</a>
+            </li>
+            <li>
+                <a href="hirlevel.html">Hírlevél</a>
+            </li>
+            <li>
+                <a href="#" id="active">Árfelmérés</a>
+            </li>
+        </ul>
+    </div>
+    <div class="tartalom">
+        <h1>Árkalkulátor</h1>
+        <table class="kalkulator">
+            <tr>
+                <td>
+                    <label for="negyzetMeterAr">Négyzetméter ár (maximum 1500): </label>
+                </td>
+                <td>
+                    <input type="number" id="negyzetMeterAr" max="1500" min="1" required>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="designTipus">Design típus: </label>
+                </td>
+                <td>
+                    <select id="designTipus">
+                        <option>Beltéri Design</option>
+                        <option>Kültéri Design</option>
+                        <option>Tapéta Rendelés</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="varos">Város: </label>
+                </td>
+                <td>
+                    <select id="varos">
+                        <option>Budapest</option>
+                        <option>Tatabánya</option>
+                        <option>Székesfehérvár</option>
+                        <option>Dunakeszi</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label>Ház típus: </label>
+                </td>
+                <td>
+                    <input type="radio" name="hazTipus" value="Kertes ház"> Kertes ház
+                    <input type="radio" name="hazTipus" value="Lépcsőház"> Lépcsőház
+                    <input type="radio" name="hazTipus" value="Panellakás"> Panellakás
+                </td>
+            </tr>
+        </table>
+        <button onclick="arSzamitas()" class="button2">Ár kiszámítása</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Html beadandó. Péter Zsombor.</p>
+    </footer>
+</body>
+
+</html>

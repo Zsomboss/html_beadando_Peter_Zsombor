@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Péter Zsombor">
+    <meta name="copyright" content="iskolai projekt">
+    <meta name="description" content="A lakás berendezés bemutatása egy iskolai projekt keretein belül">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Megrendelések</title>
+    <script src="jquery/jquery-3.7.1.js"></script>
+    <script src="galleria-1.6.1/dist/galleria.js"></script>
+    <script src="galleria-1.6.1/dist/themes/classic/galleria.classic.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#images').galleria(width = 500, height = 500);
+        });
+    </script>
+
+</head>
+
+<body class="masodik">
+    <div class="navbar">
+        <img src="kepek/logo.jpg.avif" alt="logo" class="logo">
+        <ul>
+            <li>
+                <a href="index.html">Otthon</a>
+            </li>
+            <li>
+                <a href="#" id="active">Beltér</a>
+            </li>
+            <li>
+                <a href="hirlevel.html">Hírlevél</a>
+            </li>
+            <li>
+                <a href="arfelmeres.html">Árfelmérés</a>
+            </li>
+        </ul>
+    </div>
+    <div id="content">
+        <div class="column">
+            <section id="szobabemutato">
+                <h1>Szobabemutató</h1>
+                <div class="szoba-container">
+                    <div class="szoveg">
+                        <h2>Elegáns Hálószoba Hangulat</h2>
+                        <p>Kényeztesse magát a luxus ágyak és finom textíliák ölelésében. A hálószobai dizájn, ahol a
+                            pihenés művészete találkozik a stílusos megoldásokkal.</p>
+                    </div>
+                    <div class="kep">
+                        <img src="kepek/romantikushalo.jpg" alt="Romantikus haloszoba">
+                    </div>
+                </div>
+                <div class="szoba-container">
+                    <div class="szoveg">
+                        <h2>Kreatív Dolgozószoba Kavalkád</h2>
+                        <p>Az otthoni irodai tér sosem volt még ilyen inspiratív! Fedezze fel a hatékony munkavégzés és
+                            a kreatív gondolkodás szimbiózisát.</p>
+                    </div>
+                    <div class="kep">
+                        <img src="kepek/dolgozoszoba.jpg" alt="Elegans Dolgozoszoba">
+                    </div>
+                </div>
+                <div class="szoba-container">
+                    <div class="szoveg">
+                        <h2>Modern Nappali Kényelem</h2>
+                        <p>Lépjen be a modern kényelem birodalmába, ahol a design és a funkcionalitás találkozik.
+                            Tervezze meg a tökéletes szórakozóhelyszínt családja és barátai számára.</p>
+                    </div>
+                    <div class="kep">
+                        <img src="kepek/modernnappali.jpg" alt="Modern Nappali">
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="kepgaleria">
+                    <p class="ps">MUNKÁINK AMIKRE BÜSZKÉK VAGYUNK</p>
+                    <article id="images" class="galleria">
+                        <img src="kepek/kep1.jpeg" alt="My description" title="My title">
+                        <img src="kepek/kep2.jpg.avif" alt="My description2" title="Beltér">
+                        <img src="kepek/kep3.png" alt="My description2" title="Beltér">
+                        <img src="kepek/kep4.jpg" alt="My description2" title="Beltér">
+                        <img src="kepek/kep5.jpeg" alt="My description2" title="Beltér">
+                        <img src="kepek/kep6.jpg" alt="My description2" title="Beltér">
+                        <img src="kepek/kep7.jpg" alt="My description2" title="Beltér">
+                        <img src="kepek/kep8.jpg" alt="My description2" title="Beltér">
+
+                    </article>
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+        <footer class="lablec">
+            <p>&copy; 2023 Html beadandó. Péter Zsombor.</p>
+        </footer>
+</body>
+
+</html>
